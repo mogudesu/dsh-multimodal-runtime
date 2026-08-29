@@ -2,10 +2,10 @@
 
 ![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey) ![Node](https://img.shields.io/badge/node-%3E%3D_20-339933) ![Version](https://img.shields.io/badge/version-0.1.0-blue) ![Tests](https://img.shields.io/badge/tests-vitest%20%C3%97%2029-green)
 
-**Mogu Multimodal Runtime** —— DeepSeek Harness 统一多模态能力运行时（V1）。
+**Mogu Multimodal Runtime** —— DeepSeek Harness 多模态能力运行（V1）。
 
-让以文本推理为核心的 DeepSeek Harness 通过 MCP + Skill + 高层 Tool 获得
-"生成 → 处理 → 理解 → 编排"多模态任务的能力。首个 Provider：**Comfy Local**
+让以文本推理为核心的 DeepSeek Harness 通过 MCP + Skill + 高层 Tool 获得调用本地comfyui，runninghub的模型应用，openrouter的模型生成图片，视频，音频的能力；
+"生成 → 处理 → 理解 → 编排"多模态任务的能力。 Provider：**Comfy Local**
 （官方 comfy-mcp + 本机 ComfyUI）。
 
 ```
