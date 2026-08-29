@@ -1,0 +1,14 @@
+node_modules/
+lib/
+dist/
+*.tgz
+.dsh-media/
+
+# 临时 / 调试文件
+.tmp-*
+cand_*.js
+test_cand.js
+*_backup_view.txt
+recovered_client.txt
+view_logs.txt
+scratch_*.py

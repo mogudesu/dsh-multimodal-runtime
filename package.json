@@ -1,0 +1,67 @@
+{
+  "name": "dsh-multimodal-runtime",
+  "version": "0.1.0",
+  "description": "Mogu Multimodal Runtime - DeepSeek Harness 统一多模态能力运行时 (Comfy Local Provider V1)",
+  "type": "module",
+  "main": "lib/dsh/index.js",
+  "types": "lib/dsh/index.d.ts",
+  "exports": {
+    ".": "./lib/dsh/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "skills",
+    "recipes",
+    "workflows",
+    "README.md"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-api-gateway"
+      ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "bin": {
+    "mmr-setup": "scripts/setup.mjs"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "setup": "node scripts/setup.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "comfyui",
+    "comfy-mcp",
+    "multimodal",
+    "plugin"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-llm": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.8",
+    "@deepseek-ai/dsh-typert-protocol": "^0.1.0-rc.6",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}

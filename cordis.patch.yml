@@ -1,0 +1,10 @@
+# dsh-multimodal-runtime bundle patch layer（PRD §6）
+# 由 `dsh plugin --profile web add ./dsh-multimodal-runtime` 安装后自动生效。
+#
+# 注意：Comfy MCP 客户端行（mcp-client）不在本文件——
+# 因为 COMFY_BIN 是本机绝对路径，由 `node scripts/setup.mjs --patch`
+# 写入 home 级 patch（$DSH_HOME/cordis.patch.yml，机器级，所有 profile 生效）。
+# 层序参考官方 publish.md：bundles → profile patch → home patch → --patch。
+- insert:
+    - id: mogu-multimodal-runtime
+      name: dsh-multimodal-runtime

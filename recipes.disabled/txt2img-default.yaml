@@ -1,0 +1,37 @@
+id: txt2img-default
+name: Flux / SDXL 文生图（默认模板）
+capability:
+  - text-to-image
+provider: comfy-local
+workflow:
+  path: workflows/txt2img-api.json
+inputs:
+  prompt:
+    type: string
+    required: true
+  negative_prompt:
+    type: string
+    required: false
+  width:
+    type: number
+  height:
+    type: number
+  seed:
+    type: number
+outputs:
+  image:
+    type: image
+health:
+  validateOnStartup: true
+lowMemoryVariant: txt2img-lowmem
+constraints:
+  maxWidth: 2048
+  maxHeight: 2048
+  aspectRatios:
+    - "1:1"
+    - "16:9"
+    - "9:16"
+  requiredNodes:
+    - CheckpointLoaderSimple
+    - KSampler
+    - VAEDecode

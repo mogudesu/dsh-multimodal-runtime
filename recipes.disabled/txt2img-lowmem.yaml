@@ -1,0 +1,29 @@
+id: txt2img-lowmem
+name: 文生图（低显存变体）
+capability:
+  - text-to-image
+provider: comfy-local
+workflow:
+  path: workflows/txt2img-api.json
+inputs:
+  prompt:
+    type: string
+    required: true
+  width:
+    type: number
+  height:
+    type: number
+  seed:
+    type: number
+outputs:
+  image:
+    type: image
+health:
+  validateOnStartup: false
+constraints:
+  maxWidth: 1024
+  maxHeight: 1024
+  requiredNodes:
+    - CheckpointLoaderSimple
+    - KSampler
+    - VAEDecode
