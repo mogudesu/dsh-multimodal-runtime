@@ -1,6 +1,6 @@
 # dsh-multimodal-runtime
 
-![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey) ![Node](https://img.shields.io/badge/node-%3E%3D_20-339933) ![Version](https://img.shields.io/badge/version-0.1.0-blue) ![Tests](https://img.shields.io/badge/tests-vitest%20%C3%97%2029-green)
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey) ![Node](https://img.shields.io/badge/node-%3E%3D_20-339933) ![Version](https://img.shields.io/badge/version-0.1.0-blue) ![Tests](https://img.shields.io/badge/tests-vitest%20%C3%97%2029-green) ![Built with](https://img.shields.io/badge/Built_with-GLM--5.3_Flash-blueviolet)
 
 **Mogu Multimodal Runtime** —— DeepSeek Harness 多模态能力运行（V1）。
 
@@ -212,6 +212,9 @@ npm run build     # tsc → lib/
 **爱吃冬菇的蘑菇（Mogu）**
 
 - Bilibili 主页：[https://space.bilibili.com/45311091](https://space.bilibili.com/45311091)
+
+> 🤖 本插件由 **GLM-5.3 Flash**（Z.ai 训练的大语言模型）制作开发，
+> 由 爱吃冬菇的蘑菇 策划、验收与发布。
 
 如果这个插件对你有帮助，欢迎去 Bilibili 关注作者，或给本仓库点一个 ⭐ Star。
 
